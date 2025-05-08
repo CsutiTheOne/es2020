@@ -1,4 +1,4 @@
-https://epic-elion-4db3c6.netlify.com/
+https://epic-elion-4db3c6.netlify.app/
 
 17
 Csutár Márk Tibor
