@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EuroSkilles GRAZ 2020</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/index.css"><!-- be like my style -->
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/bootstrap.min.css"><!-- BOOTSTRAP 4 -->
+    <!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./public/script/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- This is the row, where u can see the information -->
+      <div class="row">
+        <!-- Display time here-->
+        <div class="col-sm-4">
+          <h4 class="display">
+            <span class="disTime" id="hDisplay">hh</span>:<span class="disTime" id="minDisplay">mm</span>:<span class="disTime" id="secDisplay">ss</span>
+          </h4>
+        </div>
+        <!-- Message win or loose here-->
+        <div class="col-sm-4">
+          <h5 class="display" id="message"></h5>
+        </div>
+        <!-- Count how many mines left-->
+        <div class="col-sm-4">
+          <h4 class="display" id="disMine">Mines Display</h4>
+        </div>
+      </div>
+      <div class="row" oncontextmenu="return false;">
+        <div class="col-sm-12">
+          <div class="playArea">
+            <table class="gameField"></table>
+          </div>
+
+        </div>
+      </div>
+      <!-- this is the place where u can set thingz -->
+      <div class="row">
+
+        <div class="col-sm-4">
+            <!-- difficulty schooser -->
+            <h6 class="button" id="difChanger" onclick="game.buttons.changeDifficulty()"><div class="easy">Könnyű</div><div class="hard inactive">Nehéz</div></h6>
+        </div>
+        <div class="col-sm-4">
+          <!-- Place for new game buttun -->
+          <h6 class="button" id="newGame" onclick="game.buttons.newGame()">Új játék!</h6>
+        </div>
+        <div class="col-sm-4">
+          <!-- Flexable space 4 later purpose -->
+        </div>
+      </div>
+    </div>
+
+    <!-- OWN SCRIPTS -->
+    <script type="text/javascript" src="./public/script/index.js"></script>
+    <script type="text/javascript">
+      //renderField(9,9,10);
+    </script>
+  </body>
+</html>
